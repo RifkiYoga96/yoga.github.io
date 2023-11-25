@@ -1,0 +1,149 @@
+/* styles.css */
+*{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a.add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+a.action-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: #d9534f;
+    color: #fff;
+    border-radius: 3px;
+}
+
+a.edit-button {
+    background-color: #5bc0de;
+}
+
+
+
+.tambah{
+    color: #d9534f;
+}
+
+th{
+    background-color: #3b6c8e;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: rgb(235, 234, 234);
+}
+
+.hps{
+    background-color: rgb(125, 124, 136);
+    border: 0px;
+    border-radius: 2px;
+    color: white;
+    height: 25px;
+    padding: 4px;
+
+}
+
+.edt{
+    background-color: rgb(14, 139, 49);
+    border: 0px;
+    border-radius: 2px;
+    color: white;
+    height: 25px;
+    padding: 4px;
+
+}
+
+.hps:hover{
+    background-color: rgb(100, 99, 109);
+    cursor: pointer;
+    transition:background-color 0.3s;
+}
+
+.edt:hover{
+    background-color: rgb(10, 113, 39);;
+    cursor: pointer;
+    transition:background-color 0.3s;
+    
+}
+
+.input{
+    font-family: arial;
+    font-size: 14px;
+    position: relative;
+    left: 10%;
+    padding: 6px 8px;
+    border: 0px;
+    color: white;
+    background-color:rgb(9,112,247);
+    border-radius: 2px;
+}
+
+.input:hover{
+    background-color:rgb(6, 96, 215);
+    cursor: pointer;
+}
+
+.navbar{
+    font-family:sans-serif;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#3d2424;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width:0%;
+    background-color: #009688;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}

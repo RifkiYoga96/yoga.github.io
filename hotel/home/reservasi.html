@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Hotel</title>
+</head>
+<body>
+    <h2>Formulir Reservasi Hotel</h2>
+    <form action="process_reservasi.php" method="post">
+        <label for="nama_pelanggan">Nama Pelanggan:</label>
+        <input type="text" name="nama_pelanggan" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label for="nama_kamar">Nama Kamar:</label>
+        <input type="text" name="nama_kamar" required><br>
+
+        <label for="tgl_masuk">Tanggal Check-in:</label>
+        <input type="date" name="tgl_masuk" required><br>
+
+        <label for="tgl_keluar">Tanggal Check-out:</label>
+        <input type="date" name="tgl_keluar" required><br>
+
+        <button type="submit">Proses Reservasi</button>
+    </form>
+</body>
+</html>
